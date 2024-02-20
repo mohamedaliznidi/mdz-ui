@@ -1,9 +1,11 @@
-import {MDZButton} from "./components/Button"
+import {MDZButton} from "./components/Button";
+import {MDZInput} from "./components/InputText";
 
 function App() {
 
   return (
     <div>
+      <MDZInput />
       {/* // primary */}
       <MDZButton intent={'primary'} size={'small'} onClick={() => alert('Hello world!')}>primary</MDZButton>
       <MDZButton intent={'primary'} size={'medium'} onClick={() => alert('Hello world!')}>primary</MDZButton>

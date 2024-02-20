@@ -58,6 +58,7 @@ const button = cva("button",{
         "hover:border-info-5",
         "focus:ring-info-7",
         "focus:outline-info-7",
+        "dark:bg-primary-1"
       ],
       gray: [
         "bg-gray-9",
