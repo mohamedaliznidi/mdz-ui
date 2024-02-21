@@ -75,7 +75,45 @@ const button = cva("button",{
       medium: ["text-base", "py-2", "px-4"],
       large: ["text-lg", "py-3", "px-6"],
     },
+    appearence: {
+      solid: ["border-0"],
+      outline: ["border-2", "bg-transparent"]
+    }
   },
+  compoundVariants: [
+    // Applied via:
+    //   `button({ intent: "primary", size: "medium" })`
+    //     or
+    //   `button({ intent: "secondary", size: "medium" })`
+    {
+      intent: "primary",
+      appearence: "solid",
+      size: "medium",
+      class:[
+        "bg-primary-9",
+        "text-primary-1",
+        "border-transparent",
+        "hover:bg-primary-10",
+        "hover:border-primary-5",
+        "focus:ring-primary-7",
+        "focus:outline-primary-7",
+      ],
+    },
+    {
+      intent: "primary",
+      appearence: "outline",
+      size: "medium",
+      class:[
+        "bg-error-9",
+        "text-error-1",
+        "border-transparent",
+        "hover:bg-error-10",
+        "hover:border-error-5",
+        "focus:ring-error-7",
+        "focus:outline-error-7",
+      ],
+    }
+  ],
   defaultVariants: {
     intent: "primary",
     size: "medium",
